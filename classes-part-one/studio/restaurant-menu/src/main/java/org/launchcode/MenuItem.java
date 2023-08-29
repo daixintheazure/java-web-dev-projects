@@ -5,12 +5,14 @@ public class MenuItem {
     private String description;
     private String category;
     private boolean isNew;
+    private String name;
 
-    public MenuItem(double p, String d, String c, boolean iN) {
+    public MenuItem(double p, String d, String c, boolean iN, String n) {
         this.price = p;
         this.description = d;
         this.category = c;
         this.isNew = iN;
+        this.name = n;
     }
 
     public void setPrice(double price) {
@@ -27,5 +29,9 @@ public class MenuItem {
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 }
